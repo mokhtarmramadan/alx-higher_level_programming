@@ -1,4 +1,3 @@
 #! /usr/bin/python3
-alphabets = [chr(i) for i in range(ord('a'), ord('z') + 1)]
-for a in alphabets:
-    print(a, end='')
+for a in range(97, 123):
+    print(chr(a), end='')
