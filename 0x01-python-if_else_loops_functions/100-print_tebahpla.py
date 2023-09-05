@@ -12,7 +12,7 @@ def main():
 
 
 def print_rettel(num):
-    print(chr(num), end='')
+    print("{}".format(chr(num)), end='')
 
 
 if __name__ == "__main__":
