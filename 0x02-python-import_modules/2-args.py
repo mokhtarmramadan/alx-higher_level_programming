@@ -2,8 +2,12 @@
 if __name__ == '__main__':
     from sys import argv
 
-    if (len(argv) - 1) <= 0:
-        print("{} arguments.".format(len(argv) - 1))
+    if (len(argv) - 1) == 0:
+        print("0 arguments.")
+
+    elif (len(argv) - 1) == 1:
+        print("1 argument.")
+
     else:
         print("{} arguments:".format((len(argv) - 1)))
 
