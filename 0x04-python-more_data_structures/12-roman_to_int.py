@@ -12,6 +12,9 @@ def roman_to_int(roman_string):
     sum = 0
     prev = 0
 
+    if not roman_string or not isinstance(roman_string, str):
+        return 0
+
     for num in roman_string:
         if romans[num] > prev and prev != 0:
             sum += (-2 * prev) + romans[num]
