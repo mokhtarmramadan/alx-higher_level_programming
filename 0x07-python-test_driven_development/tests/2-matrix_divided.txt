@@ -1,0 +1,68 @@
+# 2-matrix_divided
+
+"""
+This is a module that tests one function, matrix_divided().
+For example
+"""
+
+	"""
+ ====================================================
+|Importing the module that has matrix_divided() in it|
+ ====================================================
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+ =======================================================================
+|Check that an error is raised if a list passed instead of list of lists|
+ =======================================================================
+>>> matrix_divided([1, 2, 3], 3)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+ ========================================================
+|Check to make sure that all the indexes are numbers only|
+ ========================================================
+>>> matrix_divided([[1, "cat", 3], [4, 5, 6]], 3)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+ ======================================================
+|Check to make sure that all the row have the same size|
+ ======================================================
+>>> matrix_divided([[1, 2, 5, 3], [4, 5, 6]], 3)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
+>>> matrix_divided([[1, 2, 3], [4, 5, 4, 5, 6]], 3)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
+
+ ===============
+|Division checks|
+ ===============
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "cat")
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+Traceback (most recent call last):
+	...
+ZeroDivisionError: division by zero
+
+ ================
+|Empty list check|
+ ================
+>>> matrix_divided([], 2)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+ ==================
+|Empty matirx check|
+ ==================
+>>> matrix_divided([[]], 5)
+[[]]
+
+	"""
