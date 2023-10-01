@@ -1,0 +1,51 @@
+# 0-add_integer
+"""
+This is a module that supplies one function, add_integer(). for example,
+"""
+
+	"""
+Returns the sum of two integers.
+
+ ================================================
+|Importing add_integer() function from its module|
+ ================================================
+add_integer = __import('0-add_integer').add_integer
+
+ =======================
+|Testing regular numbers|
+ =======================
+>>> add_integer(1, 2)
+3
+>>> [add_integer(n, n) for n in range(5)]
+[0, 2, 4, 6, 8]
+>>> add_integer(5, 6)
+11
+>>> add_integer(5, -1)
+4
+
+ ==============================
+|Testing flaoting point numbers|
+ ==============================
+>>> add_integer(5.2, 4.3)
+9
+>>> add_integer(5.2, 4)
+9
+>>> add_integer(5, 4.3)
+9
+
+ ================================================================================
+|Checking exception raises when passing any other data type but integer and flaot|
+ ================================================================================
+>>> add_integer("hello", "world")
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+>>> add_integer("hello", 5)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+>>> add_integer(2, "world")
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+	"""
