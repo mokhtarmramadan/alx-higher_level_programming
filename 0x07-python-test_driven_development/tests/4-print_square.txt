@@ -1,0 +1,52 @@
+"""
+This module contains one test for function print_square()
+For example
+"""
+
+"""
+
+>>> print_square = __import__('4-print_square').print_square
+
+ =========================================================
+|Make sure that size is always a greater-than-zero integer|
+ =========================================================
+>>> print_square(4)
+####
+####
+####
+####
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+>>> print_square(0)
+
+>>> print_square(1.5)
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
+>>> print_square("value")
+Traceback (most recent call last):
+        ...
+TypeError: size must be an integer
+>>> print_square(-2)
+Traceback (most recent call last):
+        ...
+ValueError: size must be >= 0
+>>> print_square(-21.5)
+Traceback (most recent call last):
+        ...
+TypeError: size must be an integer
+>>> print_square()
+Traceback (most recent call last):
+        ...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+"""
