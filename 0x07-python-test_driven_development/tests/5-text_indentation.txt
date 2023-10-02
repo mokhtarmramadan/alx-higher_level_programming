@@ -1,0 +1,65 @@
+"""
+This module test one function, text_indentation().
+For example,
+"""
+"""
+
+ ====================================================
+|Importing the module and the function will be tested|
+ ====================================================
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+ =====================================
+|Testing all the possible string cases|
+ =====================================
+>>> text = "Hello, world"
+>>> text_indentation(text)
+Hello, world
+>>> text = "two new lines: \n"
+>>> text_indentation(text)
+two new lines:
+<BLANKLINE>
+<BLANKLINE>
+>>> text = "hell0. 7a5l45:"
+>>> text_indentation(text)
+hell0.
+<BLANKLINE>
+7a5l45:
+<BLANKLINE>
+>>> text = "? really?"
+>>> text_indentation(text)
+?
+<BLANKLINE>
+really?
+<BLANKLINE>
+>>> text = ""
+>>> text_indentation(text)
+
+ ===========================================
+|Making sure that the input is only a string|
+ ===========================================
+>>> text = 5
+>>> text_indentation(text)
+Traceback (most recent call last):
+	...
+TypeError: text must be a string
+>>> text = 1.5
+>>> text_indentation(text)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+>>> text = -1
+>>> text_indentation(text)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+>>> text = -5.5
+>>> text_indentation(text)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+>>> text = None
+>>> text_indentation(text)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
