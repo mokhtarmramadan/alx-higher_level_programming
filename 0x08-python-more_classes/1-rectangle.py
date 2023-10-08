@@ -8,11 +8,13 @@ This module supplise only one class as follows
 class Rectangle:
     """ defines a rectangle """
     def __init__(self, width=0, height=0):
+        """Initialize a new Rectangle."""
         self.__height = height
         self.__width = width
 
     @property
     def width(self):
+        """Get/set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -26,6 +28,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """Get/set the height of the rectangle."""
         return self.__height
 
     @height.setter
