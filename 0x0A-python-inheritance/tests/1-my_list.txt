@@ -1,0 +1,55 @@
+""" This module contains only one function test """
+
+"""
+>>> MyList = __import__('1-my_list').MyList
+
+-------------------------------------------
+Normal test
+
+>>> my_list = [1, 5, 7, 2, 3]
+>>> a = MyList(my_list).print_sorted()
+[1, 2, 3, 5, 7]
+
+-------------------------------------------
+Empty list test
+
+>>> my_list = []
+>>> a = MyList(my_list).print_sorted()
+[]
+
+--------------------------------------------
+One element list test
+
+>>> my_list = [1]
+>>> a = MyList(my_list).print_sorted()
+[1]
+
+---------------------------------------------
+Negative numbers list test
+
+>>> my_list = [-1, -5, -7, -2, -3]
+>>> a = MyList(my_list).print_sorted()
+[-7, -5, -3, -2, -1]
+
+----------------------------------------------
+Mixed negative, positive numbers list test
+
+>>> my_list = [1, -5, 7, 2, -3]
+>>> a = MyList(my_list).print_sorted()
+[-5, -3, 1, 2, 7]
+
+-----------------------------------------------
+Same number test
+
+>>> my_list = [3, 3, 3]
+>>> a = MyList(my_list).print_sorted()
+[3, 3, 3]
+
+-----------------------------------------------
+>>> my_list = [1, 5, 7, 2, 3]
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+	File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'print_sorted'
+
+"""
