@@ -6,6 +6,7 @@ Pascal’s triangle of n"""
 
 
 def pascal_triangle(n):
+    """ pascal_triangle function """
     matrix = []
     for i in range(n):
         """ iterate n times """
