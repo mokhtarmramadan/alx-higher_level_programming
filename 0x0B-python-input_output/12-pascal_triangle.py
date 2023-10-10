@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+""" This module supplies two functions,
+pascal_triangle and generate_row to return
+a list of lists of integers representing the
+Pascal’s triangle of n"""
+
+
 def pascal_triangle(n):
     matrix = []
     for i in range(n):
