@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """Defines a Python class-to-JSON function."""
 
 
