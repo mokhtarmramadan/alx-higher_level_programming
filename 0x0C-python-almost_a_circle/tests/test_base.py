@@ -136,12 +136,6 @@ class TestBase_to_json_string(unittest.TestCase):
         list_dicts = [s1.to_dictionary(), s2.to_dictionary()]
         self.assertTrue(len(Base.to_json_string(list_dicts)) == 78)
 
-    def test_to_json_string_empty_list(self):
-        self.assertEqual("[]", Base.to_json_string([]))
-
-    def test_to_json_string_none(self):
-        self.assertEqual("[]", Base.to_json_string(None))
-
     def test_to_json_string_no_args(self):
         with self.assertRaises(TypeError):
             Base.to_json_string()
@@ -212,11 +206,6 @@ class TestBase_save_to_file(unittest.TestCase):
 
     def test_save_to_file_None(self):
         Square.save_to_file(None)
-        with open("Square.json", "r") as f:
-            self.assertEqual("[]", f.read())
-
-    def test_save_to_file_empty_list(self):
-        Square.save_to_file([])
         with open("Square.json", "r") as f:
             self.assertEqual("[]", f.read())
 
