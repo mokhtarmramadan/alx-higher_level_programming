@@ -81,7 +81,7 @@ class Rectangle(Base):
     def __str__(self):
         """ returns [Rectangle] (<id>) <x>/<y> - <width>/<height> """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
-                self.y, self.width, self.height)
+            self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """ assigns an argument to each attribute """
@@ -123,16 +123,3 @@ class Rectangle(Base):
         """ returns the dictionary representation of a Rectangle """
         return {"x": self.x, "width": self.width, "id": self.id,
                 "height": self.height, "y": self.y}
-
-
-
-
-
-
-
-
-
-
-
-
-
