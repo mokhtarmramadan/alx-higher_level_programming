@@ -6,7 +6,14 @@ if (!list || list.length === 0 || list.length === 1) {
   process.exit(1);
 }
 bubbleSort(list);
-console.log(list[list.length - 2]);
+for (let i = list.length - 1; i > 0; i--) {
+  if (list[i] > list[i - 1]) {
+    console.log(list[i - 1]);
+    process.exit(1);
+  } else if (i === 1) {
+    console.log('0');
+  }
+}
 
 function bubbleSort (list) {
   const listLength = list.length;
