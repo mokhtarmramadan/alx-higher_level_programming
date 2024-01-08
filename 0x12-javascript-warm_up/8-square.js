@@ -9,7 +9,7 @@ if (!argv[0] || isNaN(number)) {
   let asterisk = '';
   for (let i = 0; i < number; i++) {
     for (let j = 0; j < number; j++) {
-      asterisk += '*';
+      asterisk += 'X';
     }
     console.log(asterisk);
     asterisk = '';
