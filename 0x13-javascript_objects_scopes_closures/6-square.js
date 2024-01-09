@@ -3,16 +3,12 @@
 const supSquare = require('./5-square.js');
 class Square extends supSquare {
   charPrint (c) {
-    if (c !== undefined) {
-      for (let i = 0; i < this.width; i++) {
-        let c = '';
-        for (let j = 0; j < this.width; j++) {
-          c += 'C';
-        }
-        console.log(c);
-      }
-    } else {
-      super.print();
+    if (c === undefined) {
+      c = 'X';
+    }
+
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
     }
   }
 }
