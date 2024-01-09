@@ -5,7 +5,7 @@ class Square extends supSquare {
   charPrint (c) {
     if (c !== undefined) {
       for (let i = 0; i < this.width; i++) {
-        let c = 'C';
+        let c = '';
         for (let j = 0; j < this.width; j++) {
           c += 'C';
         }
