@@ -13,8 +13,12 @@ if __name__ == '__main__':
                 join cities on states.id = cities.state_id\
                 where states.name = %s", (state,))
     entries = cur.fetchall()
-    for entry in entries:
-        print(entry, end='')
+    for i in range(len(entries)):
+        if i == len(entries) - 1:
+            print(f'{entries[i][0]}', end='')
+        else:
+            print(f'{entries[i][0]}, ', end='')
+
     print()
     cur.close()
     db.close()
