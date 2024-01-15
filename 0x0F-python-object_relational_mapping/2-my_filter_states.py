@@ -9,7 +9,7 @@ if __name__ == '__main__':
                          passwd=argv[2], db=argv[3], port=3306)
     cur = db.cursor()
     state = argv[4]
-    cur.execute("SELECT * FROM states WHERE name='{}'".format(state))
+    cur.execute("SELECT * FROM states WHERE name LIKE'{}'".format(state))
     entries = cur.fetchall()
     for entry in entries:
         print(entry)
