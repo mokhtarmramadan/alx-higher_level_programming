@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # Write a function that finds a peak in a list of unsorted integers
 def find_peak(nums):
     """ Takes nums list as an arg and finds the peak """
