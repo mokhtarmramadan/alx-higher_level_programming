@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Write a function that finds a peak in a list of unsorted integers
 def find_peak(nums):
+    """ Takes nums list as an arg and finds the peak """
     if len(nums) == 1:
         return nums[0]
     elif len(nums) == 0:
