@@ -11,6 +11,7 @@ def find_peak(nums):
         peak = sorted_list[len(sorted_list) - 1]
         return peak
 
+
 def merge_sort(arr):
     """Sorts a list using the merge sort algorithm."""
 
@@ -22,6 +23,7 @@ def merge_sort(arr):
     right = merge_sort(arr[mid:])  # Recursively sort the right half
 
     return merge(left, right)  # Merge the sorted halves
+
 
 def merge(left, right):
     """Merges two sorted lists into a single sorted list."""
